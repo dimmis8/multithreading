@@ -13,6 +13,16 @@
 		0A0B4D5C2BA85D6300AC9C96 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A0B4D5A2BA85D6300AC9C96 /* Main.storyboard */; };
 		0A0B4D5E2BA85D6400AC9C96 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A0B4D5D2BA85D6400AC9C96 /* Assets.xcassets */; };
 		0A0B4D612BA85D6400AC9C96 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A0B4D5F2BA85D6400AC9C96 /* LaunchScreen.storyboard */; };
+		0A0B4D692BA89B7400AC9C96 /* ThreadCurrentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0B4D682BA89B7400AC9C96 /* ThreadCurrentController.swift */; };
+		0A0B4D6B2BA8C44E00AC9C96 /* MainThreadController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0B4D6A2BA8C44E00AC9C96 /* MainThreadController.swift */; };
+		0A0B4D6D2BA8C5EF00AC9C96 /* AnotherThreadTimerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0B4D6C2BA8C5EF00AC9C96 /* AnotherThreadTimerController.swift */; };
+		0A0B4D6F2BA9B5EA00AC9C96 /* FlagsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0B4D6E2BA9B5EA00AC9C96 /* FlagsController.swift */; };
+		0A0B4D712BA9B8E300AC9C96 /* Priority12Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0B4D702BA9B8E300AC9C96 /* Priority12Controller.swift */; };
+		0A0B4D732BA9BB0C00AC9C96 /* Priority21Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0B4D722BA9BB0C00AC9C96 /* Priority21Controller.swift */; };
+		0A0B4D752BA9BB9900AC9C96 /* Priority1212Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0B4D742BA9BB9900AC9C96 /* Priority1212Controller.swift */; };
+		0A0B4D772BA9F34300AC9C96 /* SyncAsyncController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0B4D762BA9F34300AC9C96 /* SyncAsyncController.swift */; };
+		0A0B4D792BAA06B400AC9C96 /* PrintABCController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0B4D782BAA06B400AC9C96 /* PrintABCController.swift */; };
+		0A0B4D7B2BAA382800AC9C96 /* LazyVarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0B4D7A2BAA382800AC9C96 /* LazyVarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +34,16 @@
 		0A0B4D5D2BA85D6400AC9C96 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0A0B4D602BA85D6400AC9C96 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0A0B4D622BA85D6400AC9C96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A0B4D682BA89B7400AC9C96 /* ThreadCurrentController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadCurrentController.swift; sourceTree = "<group>"; };
+		0A0B4D6A2BA8C44E00AC9C96 /* MainThreadController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainThreadController.swift; sourceTree = "<group>"; };
+		0A0B4D6C2BA8C5EF00AC9C96 /* AnotherThreadTimerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnotherThreadTimerController.swift; sourceTree = "<group>"; };
+		0A0B4D6E2BA9B5EA00AC9C96 /* FlagsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagsController.swift; sourceTree = "<group>"; };
+		0A0B4D702BA9B8E300AC9C96 /* Priority12Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Priority12Controller.swift; sourceTree = "<group>"; };
+		0A0B4D722BA9BB0C00AC9C96 /* Priority21Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Priority21Controller.swift; sourceTree = "<group>"; };
+		0A0B4D742BA9BB9900AC9C96 /* Priority1212Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Priority1212Controller.swift; sourceTree = "<group>"; };
+		0A0B4D762BA9F34300AC9C96 /* SyncAsyncController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncAsyncController.swift; sourceTree = "<group>"; };
+		0A0B4D782BAA06B400AC9C96 /* PrintABCController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrintABCController.swift; sourceTree = "<group>"; };
+		0A0B4D7A2BAA382800AC9C96 /* LazyVarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyVarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +79,16 @@
 				0A0B4D542BA85D6300AC9C96 /* AppDelegate.swift */,
 				0A0B4D562BA85D6300AC9C96 /* SceneDelegate.swift */,
 				0A0B4D582BA85D6300AC9C96 /* MainController.swift */,
+				0A0B4D682BA89B7400AC9C96 /* ThreadCurrentController.swift */,
+				0A0B4D6A2BA8C44E00AC9C96 /* MainThreadController.swift */,
+				0A0B4D6C2BA8C5EF00AC9C96 /* AnotherThreadTimerController.swift */,
+				0A0B4D6E2BA9B5EA00AC9C96 /* FlagsController.swift */,
+				0A0B4D702BA9B8E300AC9C96 /* Priority12Controller.swift */,
+				0A0B4D722BA9BB0C00AC9C96 /* Priority21Controller.swift */,
+				0A0B4D742BA9BB9900AC9C96 /* Priority1212Controller.swift */,
+				0A0B4D762BA9F34300AC9C96 /* SyncAsyncController.swift */,
+				0A0B4D782BAA06B400AC9C96 /* PrintABCController.swift */,
+				0A0B4D7A2BAA382800AC9C96 /* LazyVarController.swift */,
 				0A0B4D5A2BA85D6300AC9C96 /* Main.storyboard */,
 				0A0B4D5D2BA85D6400AC9C96 /* Assets.xcassets */,
 				0A0B4D5F2BA85D6400AC9C96 /* LaunchScreen.storyboard */,
@@ -138,9 +168,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A0B4D732BA9BB0C00AC9C96 /* Priority21Controller.swift in Sources */,
 				0A0B4D592BA85D6300AC9C96 /* MainController.swift in Sources */,
+				0A0B4D712BA9B8E300AC9C96 /* Priority12Controller.swift in Sources */,
+				0A0B4D752BA9BB9900AC9C96 /* Priority1212Controller.swift in Sources */,
+				0A0B4D6D2BA8C5EF00AC9C96 /* AnotherThreadTimerController.swift in Sources */,
 				0A0B4D552BA85D6300AC9C96 /* AppDelegate.swift in Sources */,
+				0A0B4D7B2BAA382800AC9C96 /* LazyVarController.swift in Sources */,
+				0A0B4D772BA9F34300AC9C96 /* SyncAsyncController.swift in Sources */,
 				0A0B4D572BA85D6300AC9C96 /* SceneDelegate.swift in Sources */,
+				0A0B4D6B2BA8C44E00AC9C96 /* MainThreadController.swift in Sources */,
+				0A0B4D6F2BA9B5EA00AC9C96 /* FlagsController.swift in Sources */,
+				0A0B4D792BAA06B400AC9C96 /* PrintABCController.swift in Sources */,
+				0A0B4D692BA89B7400AC9C96 /* ThreadCurrentController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
