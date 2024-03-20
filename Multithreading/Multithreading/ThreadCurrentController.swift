@@ -1,5 +1,5 @@
 //
-//  MainController.swift
+//  ThreadCurrentController.swift
 //  Multithreading
 //
 //  Created by Дмитрий Логвинов on 18.03.2024.
@@ -7,9 +7,10 @@
 
 import UIKit
 
-final class MainController: UIViewController {
+class ThreadCurrentController: UIViewController {
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        print(Thread.current)
     }
 }
-
