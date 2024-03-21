@@ -8,22 +8,34 @@
 import UIKit
 
 class PhrasesServiceActorViewController: UIViewController {
-
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        let phrasesService = PhrasesService()
+        
+        
+            for i in 0..<10 {
+                DispatchQueue.global().async {
+                    Task {
+                        await phrasesService.addPhrase("Phrase \(i)")
+                    }
+                }
+            }
+        // Даем потокам время на завершение работы
+        Thread.sleep(forTimeInterval: 1)
+        
+        // Выводим результат
+        Task {
+            let phrases = await phrasesService.phrases
+            print(phrases)
+        }
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
+
+actor PhrasesService {
+    var phrases: [String] = []
+    func addPhrase(_ phrase: String) async {
+        phrases.append(phrase)
+    }
+}
+

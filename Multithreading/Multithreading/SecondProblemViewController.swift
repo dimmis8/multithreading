@@ -11,19 +11,30 @@ class SecondProblemViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        var sharedResource = 0
+        let semaphore = DispatchSemaphore(value: 1)
+        
+        
+        DispatchQueue.global(qos: .background).async {
+            semaphore.wait()
+            for _ in 1...100 {
+                sharedResource += 1
+            }
+            print("comlete1")
+            semaphore.signal()
+        }
+        
+        DispatchQueue.global(qos: .background).async {
+            semaphore.wait()
+            for _ in 1...100 {
+                sharedResource += 1
+            }
+            print("comlete2")
+            semaphore.signal()
+        }
+        
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
+
+//  проблема: Data race

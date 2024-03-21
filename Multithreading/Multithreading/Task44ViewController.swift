@@ -8,22 +8,68 @@
 import UIKit
 
 class Task44ViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
     
+     
+       override func viewDidLoad() {
+           super.viewDidLoad()
+          
+           // Использование
+           let threadSafeArray = ThreadSafeArray()
+           let operationQueue = OperationQueue()
 
-    /*
-    // MARK: - Navigation
+           let firstOperation = FirstOperation(threadSafeArray: threadSafeArray)
+           let secondOperation = SecondOperation(threadSafeArray: threadSafeArray)
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+           operationQueue.addOperation(firstOperation)
+           secondOperation.addDependency(firstOperation)
+           operationQueue.addOperation(secondOperation)
 
-}
+           // Дождитесь завершения операций перед выводом содержимого массива
+           operationQueue.waitUntilAllOperationsAreFinished()
+
+           print(threadSafeArray.getAll())
+       }
+   }
+
+   // Объявляем класс для для синхронизации потоков
+   class ThreadSafeArray {
+       private var array: [String] = []
+
+       func append(_ item: String) {
+           array.append(item)
+       }
+
+       func getAll() -> [String] {
+           return array
+       }
+   }
+
+   // Определяем первую операцию для добавления строки в массив
+   class FirstOperation: Operation {
+       let threadSafeArray: ThreadSafeArray
+
+       init(threadSafeArray: ThreadSafeArray) {
+           self.threadSafeArray = threadSafeArray
+       }
+
+       override func main() {
+           if isCancelled { return }
+           threadSafeArray.append("Первая операция")
+       }
+   }
+
+   // Определяем вторую операцию для добавления строки в массив
+   class SecondOperation: Operation {
+       let threadSafeArray: ThreadSafeArray
+
+       init(threadSafeArray: ThreadSafeArray) {
+           self.threadSafeArray = threadSafeArray
+       }
+
+       override func main() {
+           if isCancelled { return }
+           threadSafeArray.append("Вторая операция")
+       }
+   }
+
+// Проблема - рейс дата, решаем депенденсом

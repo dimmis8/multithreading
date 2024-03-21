@@ -8,22 +8,26 @@
 import UIKit
 
 class Task41ViewController: UIViewController {
+    
+    final class Post: Sendable {
+        
+    }
+    
+    enum State1: Sendable {
+        case loading
+        case data(String)
+    }
+    
+    enum State2: Sendable {
+        case loading
+        case data(Post)
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
+
+// ошибка возникла, так как класс класс не потокобезопасен, нужно подписать его на протокол и зафиналить его

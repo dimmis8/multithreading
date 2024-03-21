@@ -9,21 +9,58 @@ import UIKit
 
 class Task43ViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
+      override func viewDidLoad() {
+          super.viewDidLoad()
+         
+          
+          let rmOperationQueue = RMOperationQueue()
+          
+          let rmOperation1 = RMOperation()
+          rmOperation1.priority = .background
+          
+          rmOperation1.completionBlock = {
+              print(1)
+          }
+          
+          let rmOperation2 = RMOperation()
+          rmOperation2.priority = .userInteractive
+          
+          rmOperation2.completionBlock = {
+              print(2)
+          }
+          
+      
+          rmOperationQueue.addOperation(rmOperation1)
+          rmOperationQueue.addOperation(rmOperation2)
+        
+      }
+  }
 
-        // Do any additional setup after loading the view.
-    }
-    
+  protocol RMOperationQueueProtocol {
+      /// Тут храним пул наших операций
+      var operations: [RMOperation] { get }
+      /// Добавляем наши кастомные операции в пул operations
+      func addOperation(_ operation: RMOperation)
+      /// Запускаем следующую
+      func executeNextOperation()
+  }
 
-    /*
-    // MARK: - Navigation
+  // Класс, управляющий очередью операций
+  final class RMOperationQueue: RMOperationQueueProtocol {
+      var operations: [RMOperation] = []
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+      func addOperation(_ operation: RMOperation) {
+          operations.append(operation)
+          executeNextOperation()
+      }
 
-}
+      func executeNextOperation() {
+          if let nextOperation = operations.first(where: { !$0.isExecuting && !$0.isFinished }) {
+              nextOperation.isExecuting = true
+              nextOperation.start()
+              nextOperation.isFinished = true
+              executeNextOperation()
+              // рекурсия - повторный вызов одной и той же функцией себя, не перестанет выполняться условие входа
+          }
+      }
+  }

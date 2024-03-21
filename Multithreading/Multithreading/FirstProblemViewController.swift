@@ -12,18 +12,13 @@ class FirstProblemViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        let serialQueue = DispatchQueue(label: "com.example.myQueue", attributes: .concurrent)
+
+         serialQueue.async {
+            serialQueue.sync {
+                print("This will never be printed.")
+            }
+         }
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
+// проблема дедлока

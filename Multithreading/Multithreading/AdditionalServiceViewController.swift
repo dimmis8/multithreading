@@ -10,20 +10,45 @@ import UIKit
 class AdditionalServiceViewController: UIViewController {
 
     override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+           super.viewDidLoad()
+           
+           let service = ArrayAdditionService()
+           for i in 1...10 {
+               service.addElement(i)
+           }
+           service.cancelAddition()
     }
-    
 
-    /*
-    // MARK: - Navigation
+   // Класс, представляющий сервис операций добавления в массив
+   class ArrayAdditionService {
+       private var array = [Int]()
+       private var pendingWorkItems = [DispatchWorkItem]()
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+       // Метод для добавления элемента в массив
+       func addElement(_ element: Int) {
+           // Создаем новую операцию для добавления элемента в массив
+           let newWorkItem = DispatchWorkItem { [weak self] in
+               self?.array.append(element)
+               print("Элемент \(element) успешно добавлен в массив.")
+           }
 
+           // Сохраняем новую операцию
+           pendingWorkItems.append(newWorkItem)
+
+           // Даем пользователю время для отмены операции
+           DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
+               self.pendingWorkItems.first?.perform()
+               self.pendingWorkItems.removeFirst()
+           }
+       }
+
+       // Метод для отмены операции добавления элемента в массив
+       func cancelAddition() {
+           guard let lastWorkItem = pendingWorkItems.last else {
+               print("Нет операций для отмены.")
+               return
+           }
+           lastWorkItem.cancel()
+       }
+   }
 }
