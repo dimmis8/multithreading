@@ -13,6 +13,19 @@
 		0A0B4D5C2BA85D6300AC9C96 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A0B4D5A2BA85D6300AC9C96 /* Main.storyboard */; };
 		0A0B4D5E2BA85D6400AC9C96 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A0B4D5D2BA85D6400AC9C96 /* Assets.xcassets */; };
 		0A0B4D612BA85D6400AC9C96 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A0B4D5F2BA85D6400AC9C96 /* LaunchScreen.storyboard */; };
+		0A0B4D7D2BAB8E4F00AC9C96 /* SemaphoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0B4D7C2BAB8E4F00AC9C96 /* SemaphoreViewController.swift */; };
+		0A0B4D7F2BAB97A800AC9C96 /* PhrasesServiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0B4D7E2BAB97A800AC9C96 /* PhrasesServiceViewController.swift */; };
+		0A0B4D812BAB9B4700AC9C96 /* PhrasesServiceActorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0B4D802BAB9B4700AC9C96 /* PhrasesServiceActorViewController.swift */; };
+		0A0B4D832BAC423600AC9C96 /* AsyncWorkerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0B4D822BAC423600AC9C96 /* AsyncWorkerViewController.swift */; };
+		0A0B4D852BAC476100AC9C96 /* FirstProblemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0B4D842BAC476100AC9C96 /* FirstProblemViewController.swift */; };
+		0A0B4D872BAC48AD00AC9C96 /* SecondProblemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0B4D862BAC48AD00AC9C96 /* SecondProblemViewController.swift */; };
+		0A0B4D892BAC4A7A00AC9C96 /* ThirdProblemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0B4D882BAC4A7A00AC9C96 /* ThirdProblemViewController.swift */; };
+		0A0B4D8B2BAC524000AC9C96 /* FourthProblemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0B4D8A2BAC524000AC9C96 /* FourthProblemViewController.swift */; };
+		0A0B4D8D2BAC54D100AC9C96 /* AdditionalServiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0B4D8C2BAC54D100AC9C96 /* AdditionalServiceViewController.swift */; };
+		0A0B4D8F2BACCC5700AC9C96 /* Task41ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0B4D8E2BACCC5700AC9C96 /* Task41ViewController.swift */; };
+		0A0B4D912BACD98100AC9C96 /* Task42ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0B4D902BACD98100AC9C96 /* Task42ViewController.swift */; };
+		0A0B4D932BACF8AF00AC9C96 /* Task43ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0B4D922BACF8AF00AC9C96 /* Task43ViewController.swift */; };
+		0A0B4D952BACFAA200AC9C96 /* Task44ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0B4D942BACFAA200AC9C96 /* Task44ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +37,19 @@
 		0A0B4D5D2BA85D6400AC9C96 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0A0B4D602BA85D6400AC9C96 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0A0B4D622BA85D6400AC9C96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A0B4D7C2BAB8E4F00AC9C96 /* SemaphoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SemaphoreViewController.swift; sourceTree = "<group>"; };
+		0A0B4D7E2BAB97A800AC9C96 /* PhrasesServiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhrasesServiceViewController.swift; sourceTree = "<group>"; };
+		0A0B4D802BAB9B4700AC9C96 /* PhrasesServiceActorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhrasesServiceActorViewController.swift; sourceTree = "<group>"; };
+		0A0B4D822BAC423600AC9C96 /* AsyncWorkerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncWorkerViewController.swift; sourceTree = "<group>"; };
+		0A0B4D842BAC476100AC9C96 /* FirstProblemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstProblemViewController.swift; sourceTree = "<group>"; };
+		0A0B4D862BAC48AD00AC9C96 /* SecondProblemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondProblemViewController.swift; sourceTree = "<group>"; };
+		0A0B4D882BAC4A7A00AC9C96 /* ThirdProblemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdProblemViewController.swift; sourceTree = "<group>"; };
+		0A0B4D8A2BAC524000AC9C96 /* FourthProblemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthProblemViewController.swift; sourceTree = "<group>"; };
+		0A0B4D8C2BAC54D100AC9C96 /* AdditionalServiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionalServiceViewController.swift; sourceTree = "<group>"; };
+		0A0B4D8E2BACCC5700AC9C96 /* Task41ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task41ViewController.swift; sourceTree = "<group>"; };
+		0A0B4D902BACD98100AC9C96 /* Task42ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task42ViewController.swift; sourceTree = "<group>"; };
+		0A0B4D922BACF8AF00AC9C96 /* Task43ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task43ViewController.swift; sourceTree = "<group>"; };
+		0A0B4D942BACFAA200AC9C96 /* Task44ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task44ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +85,19 @@
 				0A0B4D542BA85D6300AC9C96 /* AppDelegate.swift */,
 				0A0B4D562BA85D6300AC9C96 /* SceneDelegate.swift */,
 				0A0B4D582BA85D6300AC9C96 /* MainController.swift */,
+				0A0B4D7C2BAB8E4F00AC9C96 /* SemaphoreViewController.swift */,
+				0A0B4D7E2BAB97A800AC9C96 /* PhrasesServiceViewController.swift */,
+				0A0B4D802BAB9B4700AC9C96 /* PhrasesServiceActorViewController.swift */,
+				0A0B4D822BAC423600AC9C96 /* AsyncWorkerViewController.swift */,
+				0A0B4D842BAC476100AC9C96 /* FirstProblemViewController.swift */,
+				0A0B4D862BAC48AD00AC9C96 /* SecondProblemViewController.swift */,
+				0A0B4D882BAC4A7A00AC9C96 /* ThirdProblemViewController.swift */,
+				0A0B4D8A2BAC524000AC9C96 /* FourthProblemViewController.swift */,
+				0A0B4D8C2BAC54D100AC9C96 /* AdditionalServiceViewController.swift */,
+				0A0B4D8E2BACCC5700AC9C96 /* Task41ViewController.swift */,
+				0A0B4D902BACD98100AC9C96 /* Task42ViewController.swift */,
+				0A0B4D922BACF8AF00AC9C96 /* Task43ViewController.swift */,
+				0A0B4D942BACFAA200AC9C96 /* Task44ViewController.swift */,
 				0A0B4D5A2BA85D6300AC9C96 /* Main.storyboard */,
 				0A0B4D5D2BA85D6400AC9C96 /* Assets.xcassets */,
 				0A0B4D5F2BA85D6400AC9C96 /* LaunchScreen.storyboard */,
@@ -138,9 +177,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A0B4D932BACF8AF00AC9C96 /* Task43ViewController.swift in Sources */,
 				0A0B4D592BA85D6300AC9C96 /* MainController.swift in Sources */,
+				0A0B4D8B2BAC524000AC9C96 /* FourthProblemViewController.swift in Sources */,
+				0A0B4D872BAC48AD00AC9C96 /* SecondProblemViewController.swift in Sources */,
+				0A0B4D912BACD98100AC9C96 /* Task42ViewController.swift in Sources */,
 				0A0B4D552BA85D6300AC9C96 /* AppDelegate.swift in Sources */,
 				0A0B4D572BA85D6300AC9C96 /* SceneDelegate.swift in Sources */,
+				0A0B4D892BAC4A7A00AC9C96 /* ThirdProblemViewController.swift in Sources */,
+				0A0B4D7F2BAB97A800AC9C96 /* PhrasesServiceViewController.swift in Sources */,
+				0A0B4D832BAC423600AC9C96 /* AsyncWorkerViewController.swift in Sources */,
+				0A0B4D8F2BACCC5700AC9C96 /* Task41ViewController.swift in Sources */,
+				0A0B4D7D2BAB8E4F00AC9C96 /* SemaphoreViewController.swift in Sources */,
+				0A0B4D8D2BAC54D100AC9C96 /* AdditionalServiceViewController.swift in Sources */,
+				0A0B4D852BAC476100AC9C96 /* FirstProblemViewController.swift in Sources */,
+				0A0B4D812BAB9B4700AC9C96 /* PhrasesServiceActorViewController.swift in Sources */,
+				0A0B4D952BACFAA200AC9C96 /* Task44ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
